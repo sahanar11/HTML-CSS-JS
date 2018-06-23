@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tabstrip project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+    #tab1 {
+        border: 3px solid  rgb(40, 27, 116);
+        border-bottom: 0px;
+        position: fixed;
+        margin:auto;
+        /* bottom: 10px; */
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        float: left;
+        /* left: 558px; */
+    }
+
+    #tab2 {
+        border: 3px solid rgb(40, 27, 116);
+        margin:auto;
+        position: absolute;
+        left: 120px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+    
+    }
+    #tab3 {
+        border: 3px solid rgb(40, 27, 116);
+        margin:auto;
+        position: absolute;
+        left: 233px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+    }
+#div1{
+        height: 302px;
+        margin:auto;
+        width:90px;
+        position:fixed;
+        top:41px;
+        border: 3px solid  rgb(40, 27, 116);
+        border-top:0px;
+        border-right: 0px;
+    }
+    #cont1{
+        height: 300px;
+        margin:auto;
+        width:335px;
+        /* position:fixed; */
+        position: absolute;
+        /* top: 10px; */
+        left: 8px;  
+        top:40px;
+        border: 3px solid  rgb(40, 27, 116);
+        border-top:0px;
+    }
+    #cont2{
+        height: 300px;
+        margin:auto;
+        width:335px;
+        position: absolute;
+        visibility: hidden;
+        top:40px;
+       
+        border: 3px solid  rgb(40, 27, 116);
+        border-top:0px;
+
+    }
+    #cont3{
+        height: 300px;
+        margin:auto;
+        width:335px;
+        position: absolute;
+        visibility: hidden;
+        top:40px;
+       
+        border: 3px solid  rgb(40, 27, 116);
+        border-top:0px;
+    }
+
+#cont3:onclick {
+        visibility: active;
+    }
+    #cont2:onclick {
+        visibility: active;
+    }
+
+    img {
+        padding-top:30px;
+        width: 250px;
+        height:200px;
+        position: relative;
+        left: 50px;
+    }
+    </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#tab3").click(function(){
+        $("#cont1").css("visibility","hidden");
+        $("#cont2").css("visibility","hidden");
+        $("#cont3").css("visibility","visible");
+        $("#tab2").css("border-bottom","0px");
+        $("#tab1").css("border","3px solid  rgb(40, 27, 116)");
+        $("#tab3").css("border-bottom","0px");
+        $("#tab2").css("border","3px solid  rgb(40, 27, 116)");
+        // $("#tab2").css("height","22px");
+    });
+    $("#tab2").click(function(){
+        $("#cont1").css("visibility","hidden");
+        $("#cont2").css("visibility","visible");
+        $("#cont3").css("visibility","hidden");
+        $("#tab2").css("border-bottom","0px");
+        $("#tab1").css("border","3px solid  rgb(40, 27, 116)");
+        $("#tab2").css("border-bottom","0px");
+        $("#tab3").css("border","3px solid  rgb(40, 27, 116)");
+        // $("#tab2").css("height","22px");
+    });
+
+    $("#tab1").click(function(){
+        $("#cont2").css("visibility","hidden");
+        $("#cont1").css("visibility","visible");
+        $("#cont3").css("visibility","hidden");
+        $("#tab1").css("border-bottom","0px");
+        // $("#tab1").css("height","22px");
+        $("#tab1").css("border-bottom","3px solid  white");
+        $("#tab3").css("border","3px solid  rgb(40, 27, 116)");
+        $("#tab2").css("border","3px solid  rgb(40, 27, 116)");
+    });
+});
+</script>
+</head>
+<body>
+    <div id="tab1">tab1</div>
+    <div id="tab2">tab2</div>
+    <div id="tab3">tab3</div>
+    <!-- <div id="div1"></div> -->
+    <div id="cont1">
+        <img src="tom.jpeg"/ >
+    </div>
+    <div id="cont2">
+            <img src="jerry.png"/ >
+    </div>
+    <div id="cont3">
+            <img src="quinoa-burrito-bowl_large.jpg"/ >
+    </div>
+</body>
+</html>
