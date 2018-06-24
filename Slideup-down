@@ -6,6 +6,7 @@
     <title>Transitional Pages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style>
         body {
@@ -50,7 +51,7 @@
         .content-div {
             margin: 0 auto;
             width: 600px;
-            height: 130px;
+            height: 200px;
             margin-top:10px;
             left: 400px;
             border-radius: 5px;
@@ -78,64 +79,64 @@
         .button:hover {
                 background-color: green;
         }
+        #done{
+            width:60px;
+            height:60px;
+            margin:auto;
+            border-radius: 50%;
+            padding-top:10px;
+            background-color: #4CAF50;
+        }
+        .ok1{
+            font-size: 24pt;
+            color: white;
+        }
     </style>
     <script src="file:///Users/nbm/Desktop/jquery-3.3.1.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script>
     $(document).ready(function(){
-        // $("#next_btn").click(function(){
-        //     $("#cont1").css("visibility","visible");
-        //     $("#main_div").css("display","none");
-        // });
+        
         $('#next_btn-0').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-0").addClass('slideup-disappear');
             $('#step-0').removeClass('slideup-appear');
              $('#step-1').addClass('slideup-appear');
              $('#step-1').removeClass('slidedown-disappear');
         });
         $('#next_btn-1').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-1").addClass('slideup-disappear');
             $('#step-1').removeClass('slideup-appear');
             $('#step-2').addClass('slideup-appear');
             $('#step-2').removeClass('slidedown-disappear');
         });
         $('#next_btn-2').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-2").addClass('slideup-disappear');
             $('#step-2').removeClass('slideup-appear');
             $('#step-3').addClass('slideup-appear');
             $('#step-3').removeClass('slidedown-disappear');
         });
         $('#next_btn-3').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-3").addClass('slideup-disappear');
             $('#step-3').removeClass('slideup-appear');
             $('#step-final').addClass('slideup-appear');
             $('#step-final').removeClass('slidedown-disappear');
         });
         $('#prev_btn-1').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-1").addClass('slidedown-disappear');
-
              $('#step-0').addClass('slideup-appear');
              $('#step-0').removeClass('slideup-disappear');
         });
         $('#prev_btn-2').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-2").addClass('slidedown-disappear');
             $('#step-1').addClass('slideup-appear');
             $('#step-1').removeClass('slideup-disappear');
         });
         $('#prev_btn-3').click(function() {
-            // $("#cont1").css("visibility","visible");
             $("#step-3").addClass('slidedown-disappear');
             $('#step-2').addClass('slideup-appear');
             $('#step-2').removeClass('slideup-disappear');
         });
-        $('#prev_btn-4').click(function() {
-            // $("#cont1").css("visibility","visible");
+        $('#prev_btn-4').click(function() { 
             $("#step-final").addClass('slidedown-disappear');
             $('#step-3').addClass('slideup-appear');
             $('#step-3').removeClass('slideup-disappear');
@@ -167,6 +168,7 @@
         <button id="next_btn-3" class="button">Next</button>
     </div>
     <div id="step-final" class="content-div slide-transition-base">
+        <div id="done"> <span class="glyphicon glyphicon-ok ok1"></span></div>
         <div>Success!!</div>  <br/>
         <button id="prev_btn-4" class="button">Previous</button>
     </div>
