@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transitional Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+        body {
+            width: 100%;
+            background-color: whitesmoke;
+            font-family:verdana;
+        }
+        .slide-transition-base {
+            position: absolute;
+            margin: 0 auto;
+            top: 600px;
+            opacity: 0;
+            transition: opacity 1s,  margin-top 3s, top 1s;
+            transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        }
+        .slideup-appear {
+            margin-top: 10 !important;
+            top: 0 !important;
+            opacity: 1 !important;
+        }
+        .slideup-disappear {
+            margin-top: -300px !important;
+            top: 0 !important;
+            opacity: 0 !important;
+        }
+
+        .slidedown-appear {
+            margin-top: 0 !important;
+            top: 0 !important;
+            opacity: 1 !important;
+
+        }
+
+        .slidedown-disappear{
+
+             margin-top: 1200px !important;
+            top: 0 !important;
+            opacity: 0 !important;
+        }
+
+        
+        .content-div {
+            margin: 0 auto;
+            width: 600px;
+            height: 130px;
+            margin-top:10px;
+            left: 400px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 70px;
+            overflow: hidden;
+        }
+
+        .bg-white {
+            background: white;
+            border: 2px solid whitesmoke;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 4px 20px;
+            height:30px;
+            text-align: center;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 4px;
+        }   
+        .button:hover {
+                background-color: green;
+        }
+    </style>
+    <script src="file:///Users/nbm/Desktop/jquery-3.3.1.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script>
+    $(document).ready(function(){
+        // $("#next_btn").click(function(){
+        //     $("#cont1").css("visibility","visible");
+        //     $("#main_div").css("display","none");
+        // });
+        $('#next_btn-0').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-0").addClass('slideup-disappear');
+            $('#step-0').removeClass('slideup-appear');
+             $('#step-1').addClass('slideup-appear');
+             $('#step-1').removeClass('slidedown-disappear');
+        });
+        $('#next_btn-1').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-1").addClass('slideup-disappear');
+            $('#step-1').removeClass('slideup-appear');
+            $('#step-2').addClass('slideup-appear');
+            $('#step-2').removeClass('slidedown-disappear');
+        });
+        $('#next_btn-2').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-2").addClass('slideup-disappear');
+            $('#step-2').removeClass('slideup-appear');
+            $('#step-3').addClass('slideup-appear');
+            $('#step-3').removeClass('slidedown-disappear');
+        });
+        $('#next_btn-3').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-3").addClass('slideup-disappear');
+            $('#step-3').removeClass('slideup-appear');
+            $('#step-final').addClass('slideup-appear');
+            $('#step-final').removeClass('slidedown-disappear');
+        });
+        $('#prev_btn-1').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-1").addClass('slidedown-disappear');
+
+             $('#step-0').addClass('slideup-appear');
+             $('#step-0').removeClass('slideup-disappear');
+        });
+        $('#prev_btn-2').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-2").addClass('slidedown-disappear');
+            $('#step-1').addClass('slideup-appear');
+            $('#step-1').removeClass('slideup-disappear');
+        });
+        $('#prev_btn-3').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-3").addClass('slidedown-disappear');
+            $('#step-2').addClass('slideup-appear');
+            $('#step-2').removeClass('slideup-disappear');
+        });
+        $('#prev_btn-4').click(function() {
+            // $("#cont1").css("visibility","visible");
+            $("#step-final").addClass('slidedown-disappear');
+            $('#step-3').addClass('slideup-appear');
+            $('#step-3').removeClass('slideup-disappear');
+        });
+        
+    });
+        </script>
+</head>
+
+<body>
+    <div id="step-0" class="content-div slide-transition-base slideup-appear">
+        <p>Landing page</p>
+        <button id="next_btn-0" class="button">Next</button>
+    </div>
+    <div id="step-1" class="content-div slide-transition-base bg-white">
+        <div>Hi you are in Container 1. Welcome :)</div>  <br/>
+        <button id="prev_btn-1" class="button">Previous</button>
+        <button id="next_btn-1" class="button">Next</button>
+    </div>
+    <div id="step-2" class="content-div slide-transition-base bg-white">
+        <div>Hi you are in Container 2. Welcome :)</div>
+        <br/>
+        <button id="prev_btn-2" class="button">Previous</button>
+        <button id="next_btn-2" class="button">Next</button>
+    </div>
+    <div id="step-3" class="content-div slide-transition-base bg-white">
+        <div>Hi you are in Container 3. Welcome :)</div>  <br/>
+        <button id="prev_btn-3" class="button">Previous</button>
+        <button id="next_btn-3" class="button">Next</button>
+    </div>
+    <div id="step-final" class="content-div slide-transition-base">
+        <div>Success!!</div>  <br/>
+        <button id="prev_btn-4" class="button">Previous</button>
+    </div>
+</body>
+</html>
