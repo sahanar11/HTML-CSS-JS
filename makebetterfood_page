@@ -1,0 +1,177 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <style>
+    body {
+        /* opacity: 0.4; */
+        background-image: url(./bowl.jpg);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    margin: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* li a:hover:not(.active) {
+    background-color: #333;
+} */
+
+.active {
+    background-color: #333;
+}
+    #d1{
+        margin: auto;
+        width:63%;
+        height: 90px;
+        background-color: white;
+        border-radius: 32px;
+        padding: 20px;
+        /* margin-top:20px;  */
+    }
+    #d2{
+        margin: 0 auto;
+        width:63%;
+        height: 1175px;
+        background-color: white;
+        border-radius: 32px;
+        padding-top: 20px;
+        padding-left: 20px;
+        /* float: left; */
+        /* margin-top:20px;  */
+    }
+    #d3 {
+        margin: 0 auto;
+        width:50%;
+        height: 305px;
+        background-color: white;
+        border-radius: 32px;
+        padding-top: 10px;
+        padding-left: 20px;
+        float: left;
+       
+        /* align-content: flex-start; */
+        /* margin-top:20px;  */
+    }
+    #d4 {
+        margin: 0 auto;
+        width:50%;
+        height: 368px;
+        background-color: white;
+        border-radius: 32px;
+        padding: 10px;
+        float: left;
+        padding-left:20px;
+        /* align-content: flex-start; */
+        /* margin-top:20px;  */
+    }
+    #divfull {
+        width : 75%;
+        height: 45px;
+        padding-left:20px;
+        background-color: white;  float: left;
+    }
+    #bowl {
+        width : 390px;
+        height: 270px;
+        z-index:-1;
+        padding-top:10px;
+        border: 10px solid white; 
+        transform: rotate(5deg);
+    }
+   
+    h2{
+        color: black;
+        padding: 0px;
+        padding-top:10px;
+        margin: 0;
+    }
+    #bowl:hover {
+        transform: rotate(0deg);
+        transform: scale(1.05);
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+<ul>
+        <li><a class="active" href="#home">Make Better Food</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#contact">Recipes</a></li>
+        <li><a href="#about">Subscribe</a></li>
+      </ul>
+    <br/> <br/> <br/>
+    <div id="d1">
+        <h2> Learn how to make better food. </h2>
+            This blog takes a different approach to recipes which lets you focus on making better food, not trying to figure out what to do next.
+    </div>
+<br/>
+    <div id="d2">
+       <a href="Anim1.html"> <h1> Quinoa Burrito Bowl</h1></a>
+       PrintPrinter FriendlyShow carb counts HomeRecipesEntreesQuinoa Burrito Bowl
+This dish has entered our regular weeknight rotation. It's delicious, only take a single pot to prepare, and as long as you go easy on the cheese and sour cream, it's incredibly good for you. Quinoa is one of the seven "super grains" and provides high protein, fiber, and minerals not found in rice.<br/>
+- - - - - - - - - - - - - - - - -- - - - - -  - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Prep: 10 minCook: 30 minTotal: 40 min<span>                                                                                                                                                  Serves 4 to 6</span> <br/>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/> <br/>
+<div id ="d3">
+       
+<b>1 tablespoon canola oil <br/></b>
+Pour oil in a large sauce pan or Dutch oven and preheat over medium heat. <br/><br/>
+<b>1 small red onion, finely diced <br/></b>
+<b>1 jalapeño, seeded and finely diced <br/></b>
+<b>2 cloves garlic, minced <br/></b>
+Saute onion, garlic and jalapeño until fragrant, about 1 minute. <br/><br/>
+<b>1 ⅓ cups chicken or vegetable broth <br/></b>   
+<b>15 ounces black beans, rinsed and drained <br/></b>
+<b>1 cup uncooked quinoa, rinsed well and drained <br/></b>
+<b>2 tomatoes, diced <br/></b>
+<b>1 cup frozen corn <br/></b>
+<b>½ teaspoon kosher salt <br/></b>
+Add broth, black beans, quinoa, tomatoes, corn, and salt to pot. 
+</div>  
+    <!-- <div id="bowwl"> -->
+        <img id="bowl" src='./bowl.jpg' > </img>
+    <!-- </div> -->
+<div id= "divfull" >
+Stir to combine and bring to a boil. Stir well and reduce heat to a simmer. Cover and simmer until quinoa is cooked and liquid has been absorbed, about 25 minutes. <br/><br/>
+</div>
+<div id="d4">
+¼ cup chopped fresh cilantro or parsley <br/>
+½ tablespoon lime juice <br/>
+Remove from heat. Stir in cilantro and lime juice. Set aside. <br/> <br/>
+homemade guacamole, optional <br/>
+shredded cheddar or monterey jack cheese, optional <br/>
+shredded lettuce, optional <br/>
+sour cream, optional <br/>
+reserved guacamole <br/>
+Serve quinoa mixture in a bowl. Top with cheese, lettuce, sour cream, and/or guacamole as desired. <br/>
+</div> </div>
+</body>
+</html>
