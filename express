@@ -2,3 +2,24 @@ cd app1
 npm install
 npm install express --save
 node app.js
+npm install gulp --save
+npm install gulp -g
+npm install gulp-nodemon --save
+
+var gulp = require('gulp'),
+nodemon = require('gulp-nodemon');
+
+in GULP.js
+gulp.task('default',function(){
+    nodemon({
+        script: 'app.js',
+        ext: 'js',
+        env: {
+            PORT:3000
+        },
+        ignore: ['./node_modules/**']
+    })
+    .on('restart',function(){
+        console.log("server Restarted.... ");
+    });
+})
