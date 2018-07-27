@@ -1,6 +1,10 @@
 Create folder  - mkdir hello-express-app
 Change directory - cd hello-express-app
+npm install -g express-generator
+express first-express-app
+cd first-express-app
 npm install
+npm start
 node index.js
 npm install gulp --save
 npm install gulp -g
