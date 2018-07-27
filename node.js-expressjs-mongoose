@@ -1,0 +1,10 @@
+Create folder  - mkdir hello-express-app
+Change directory - cd hello-express-app
+npm install
+node index.js
+npm install gulp --save
+npm install gulp -g
+npm install gulp-nodemon
+run using -> gulp
+npm install mongoose --save
+run using -> gulp
