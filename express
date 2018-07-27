@@ -1,0 +1,4 @@
+cd app1
+npm install
+npm install express --save
+node app.js
